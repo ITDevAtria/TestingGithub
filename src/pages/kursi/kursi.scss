@@ -1,0 +1,38 @@
+page-kursi {
+    .menu-item {
+        //border-radius: 2px;
+        //text-align: left;
+        border: 1px solid lightgrey;
+        //margin: 0px;
+        //padding: 0px 0px 0px 0px;
+        width: 100%;
+        height: 100%;
+        word-wrap: normal;
+        font-family: cursive;
+        
+      }
+        
+      .img {
+          width: 100%;
+          height: 100%;
+      }
+      .title {
+          padding: 5px 5px 5px 5px;
+          font-size: 20px;
+          font-weight: 100;
+      }
+      .title2{
+          padding: 0px 5px 5px 5px;
+          font-size: 15px;
+          text-decoration: line-through;
+          color: darkgray;
+          font-weight: bold;
+      }
+      .title3{
+          padding: 0px 5px 5px 5px;
+          font-size: 15px;
+          //text-decoration: line-through;
+          color: red;
+          font-weight: bold;
+      }
+  }

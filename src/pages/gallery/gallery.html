@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+  <ion-title>
+    Tabs
+  </ion-title>
+</ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-tabs [tabsPlacement]="'top'">
+  <ion-tab *ngFor="let item of tabs">
+    <ion-icon name="{{item.icon}}"></ion-icon>
+    {{item.title}}
+  </ion-tab>
+</ion-tabs>
+</ion-content>

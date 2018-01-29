@@ -1,0 +1,25 @@
+page-home {
+  .col{
+    padding: 2px;
+  }
+    .menu-item {
+      border-radius: 5px;
+      text-align: center;
+      border: 1px solid purple;
+      margin: 2px;
+      padding: 16px 0px 0px 0px;
+      width: 100%;
+      height: 100%;
+      word-wrap: normal;
+      
+    }
+    ion-icon {
+      //font-size: 3em; //Preferred size here
+      color: purple;
+      font-size: 2em;
+    }
+    
+    .title {
+        font-size: 1em;
+    }
+  }

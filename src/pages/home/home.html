@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>image-grid</ion-title>
+  </ion-navbar>
+</ion-header>
+      
+      
+      <ion-content >
+        <ion-segment [(ngModel)]="galleryType" color="dark">
+          <ion-segment-button value="1Coloumn">
+            1 COLOUMN
+          </ion-segment-button>
+          <ion-segment-button value="2Coloumn">
+            2 COLOUMN
+          </ion-segment-button>
+          <ion-segment-button value="3Coloumn">
+            3 COLOUMN
+          </ion-segment-button>
+          <ion-segment-button value="4Coloumn">
+            4 COLOUMN
+          </ion-segment-button>
+        </ion-segment>
+      
+        <div [ngSwitch]="galleryType">
+            <ion-grid *ngSwitchCase="'1Coloumn'">
+                <ion-row wrap>
+                  <ion-col col-12 *ngFor="let item of menus" (click)="openPage(item)">
+                    <div class="menu-item" [ngStyle]="{background:item.color}">
+                      <ion-icon name="{{item.icon}}"></ion-icon><br>
+                      <div class="title">{{item.title}} </div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+          <ion-grid *ngSwitchCase="'2Coloumn'">
+            <ion-row wrap>
+              <ion-col col-6 *ngFor="let item of menus">
+                <div class="menu-item" [ngStyle]="{background:item.color}" (click)="openPage(item)">
+                  <ion-icon name="{{item.icon}}"></ion-icon><br>
+                  <div class="title">{{item.title}} </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      
+          <ion-grid *ngSwitchCase="'3Coloumn'">  
+            <ion-row wrap>
+              <ion-col col-4 *ngFor="let item of menus" (click)="openPage(item)">
+                <div class="menu-item" [ngStyle]="{background:item.color}">
+                  <ion-icon name="{{item.icon}}"></ion-icon><br>
+                  <div class="title">{{item.title}} </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <ion-grid *ngSwitchCase="'4Coloumn'">  
+            <ion-row wrap>
+              <ion-col col-3 *ngFor="let item of menus">
+                <div class="menu-item" [ngStyle]="{background:item.color}" (click)="openPage(item)">
+                  <ion-icon name="{{item.icon}}"></ion-icon><br>
+                  <div class="title">{{item.title}} </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-content>

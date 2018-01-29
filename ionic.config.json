@@ -1,0 +1,8 @@
+{
+  "name": "Atria",
+  "app_id": "a0882029",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
